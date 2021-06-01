@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./asset.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" type="text/css" href="./bootstrap-5.0.1-dist/css/bootstrap.css"> -->
+</head>
+
+<body>
+    <div class="menu">
+        <div class="icon-menu" style="cursor:pointer;">
+            <img src="./icons/icon-home.PNG" />
+            <span class="text-menu">MISA QLTS</span>
+            <img src="./icons/icon-tab.PNG" />
+        </div>
+        <div class="list-icon">
+            <div class="icon-item">
+                <div class="menu-item-icon icon-board"></div>
+                <div class="menu-item-text">Tổng quan</div>
+            </div>
+            <div class="icon-item">
+                <div class="menu-item-icon icon-asset"></div>
+                <div class="menu-item-text">Tài sản</div>
+            </div>
+            <div class="icon-item">
+                <div class="menu-item-icon icon-htdb"></div>
+                <div class="menu-item-text">Tài sản HT-ĐB</div>
+                <div class="dropdown-menu">
+                    <div class="dropdown-content">
+                        <a href="">Ghi tăng</a>
+                        <a href="">Thay đổi thông tin</a>
+                        <a href="">Đánh giá lại</a>
+                        <a href="">Tính hao mòn</a>
+                        <a href="">Kiểm kê</a>
+                        <a href="">Ghi giảm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-item">
+                <div class="menu-item-icon icon-tool"></div>
+                <div class="menu-item-text">Công cụ dụng cụ</div>
+            </div>
+            <div class="icon-item">
+                <div class="menu-item-icon icon-list"></div>
+                <div class="menu-item-text">Danh mục</div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-header">
+            <div class="header-left">
+                <div class="text-header">
+                    Sở tài chính
+                </div>
+                <div class="select">
+                    <select>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                    </select>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="icon-noti">
+                </div>
+                <div class="icon-app">
+                </div>
+                <div class="icon-que">
+                </div>
+                <div class="icon-profile">
+                </div>
+            </div>
+        </div>
+        <div class="content-body">
+            <div class="body-header">
+                Danh sách tài sản
+            </div>
+            <class class="body-body">
+                <div class="body-body-header">
+                    <input type="text" class="input-search" style="width: 200px; padding-left: 30px;" placeholder="Tìm kiếm tài sản">
+                    <div class="header-icon-excel"></div>
+                </div>
+                <div id="gridAsset">
+                    <div class="hide-item">
+                        <div class="col" FieldName="STT">STT</div>
+                        <div class="col" FieldName="AssetCode">Mã tài sản</div>
+                        <div class="col" FieldName="AssetName">Tên tài sản</div>
+                        <div class="col" FieldName="AssetType">Loại tài sản</div>
+                        <div class="col" FieldName="DepartmentName">Phòng ban</div>
+                        <div class="col" FieldName="Amount" DataType="Number">Số lượng</div>
+                        <div class="col" FieldName="Costs" DataType="Number">Nguyên giá</div>
+                        <div class="col" FieldName="Accumulate" DataType="Number">Lũy kế</div>
+                        <div class="col" FieldName="ResidualValue" DataType="Number">Giá trị còn lại</div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="./bootstrap-5.0.1-dist/js/bootstrap.js"></script> -->
+    <script src="data.js"></script>
+    <!-- Phần riêng từng màn hình -->
+    <script src="asset.js"></script>
+    <script src="test.js"></script>
+</body>
+
+</html>
